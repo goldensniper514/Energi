@@ -1,16 +1,21 @@
-
-import './App.css';
 import React from "react";
-import FirstPage from "./pages/FirstPage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Header } from "./components/Header";
+import { CryptoTable } from "./components/CryptoTable";
+import { WalletConnect } from "./components/WalletConnect";
 
 const App = () => {
   return (
-    <BrowserRouter className=" m-[0px] w-[375px] h-[825px]" >
-      <Routes>
-        <Route path="" element={<FirstPage />} />
-      </Routes>
-    </BrowserRouter>
+    <Router>
+      <div className="min-h-screen bg-[#121212]">
+        <Header />
+        <Routes>
+          <Route path="/" element={<CryptoTable />} />
+          <Route path="/wallet" element={<WalletConnect />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
+
 export default App;
