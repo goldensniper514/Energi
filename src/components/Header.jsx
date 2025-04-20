@@ -1,8 +1,12 @@
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
-
-export const Header = () => {
+import React from "react";
+export const Header = ({ dark, setDark }) => {
   const location = useLocation();
+  const toggleTheme=()=>{
+    setDark(!dark);
+    console.log("light", !dark);
+  };
+ 
   const active = "border-b-2 border-green-500 text-white";
 
   return (
@@ -16,7 +20,7 @@ export const Header = () => {
           💼 Wallet
         </Link>
       </nav>
-      <div className="text-xl text-gray-400">⚙️</div>
+      <div className="text-xl text-gray-400 cursor-pointer" onClick={toggleTheme}>⚙️</div>
     </header>
   );
 };
