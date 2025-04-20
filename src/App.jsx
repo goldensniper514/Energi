@@ -12,8 +12,8 @@ const App = () => {
       <div className={`min-h-screen ${dark ? 'bg-[#121212]' : 'bg-white'}`}>
         <Header dark={dark} setDark={setDark}/>
         <Routes>
-          <Route path="/" element={<CryptoTable />} />
-          <Route path="/wallet" element={<WalletConnect />} />
+          <Route dark={dark} setDark={setDark} path="/" element={<CryptoTable />} />
+          <Route dark={dark} setDark={setDark} path="/wallet" element={<WalletConnect />} />
         </Routes>
       </div>
     </Router>
