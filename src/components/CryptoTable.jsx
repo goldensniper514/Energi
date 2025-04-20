@@ -30,16 +30,16 @@ export const CryptoTable = () => {
       <table className="w-full table-auto">
         <thead className="border-b border-gray-600">
           <tr className="text-left text-sm text-gray-400">
-            <th className="px-4 py-3">#</th>
-            <th className="px-4 py-3">Coin</th>
-            <th className="px-4 py-3">Price</th>
+            <th className="px-4 py-5">#</th>
+            <th className="px-4 py-5">Coin</th>
+            <th className="px-4 py-5">Price</th>
           </tr>
         </thead>
         <tbody>
           {coins.map((coin, index) => (
             <tr key={coin.symbol} className="border-b border-gray-700 hover:bg-[#2a2a2a] transition ">
-              <td className="px-4 py-3 text-sm">{index + 1}</td>
-              <td className="px-4 py-3 flex items-center gap-2 text-sm justify-between">
+              <td className="px-4 py-5 text-sm">{index + 1}</td>
+              <td className="px-4 py-5 flex items-center gap-2 text-sm justify-between">
 
                   <div className="flex items-center gap-2">
                   <img src={coin.src} alt={coin.name} className="w-6 h-6 object-cover rounded" />
@@ -48,7 +48,7 @@ export const CryptoTable = () => {
                   <div className="text-gray-400 pr-[150px]">{coin.symbol}</div>
                
               </td>
-              <td className="px-4 py-3 text-sm">{coin.price}</td>
+              <td className="px-4 py-5 text-sm">{coin.price}</td>
             </tr>
           ))}
         </tbody>

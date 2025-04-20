@@ -7,7 +7,7 @@ export const Header = () => {
 
   return (
     <header className="w-full flex justify-between px-8 py-4 items-center bg-[#1a1a1a] text-white">
-      <div className="text-lg font-bold">🚀</div>
+      <div className="text-lg font-bold"></div>
       <nav className="flex gap-8 text-sm">
         <Link to="/" className={`hover:text-white ${location.pathname === "/" ? active : "text-gray-400"}`}>
           🏠 Home
