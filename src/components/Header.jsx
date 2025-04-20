@@ -14,7 +14,7 @@ export const Header = ({ dark, setDark }) => {
       (<header className="w-full flex justify-between px-8 py-4 items-center bg-white text-[#1a1a1a]">
         <div className="text-lg font-bold"></div>
         <nav className="flex gap-8 text-sm">
-          <Link to="/" className={`hover:text-[#1a1a1a] ${location.pathname === "/" ? active : "text-[#1a1a1a]"}`}>
+          <Link to="/" className={`hover:text-[#1a1a1a] ${location.pathname === "/" ? active : "text-[#1a1a1a]np"}`}>
             🏠 Home
           </Link>
           <Link to="/wallet" className={`hover:text-[#1a1a1a] ${location.pathname === "/wallet" ? active : "text-[#1a1a1a]"}`}>

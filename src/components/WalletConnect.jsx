@@ -16,7 +16,7 @@ export const WalletConnect = () => {
   };
 
   return (
-    <div className="text-white">
+    <div className="text-white mt-[100px]">
       {!connected ? (
         <div className="flex flex-col items-center justify-center mt-20 text-white">
           <img src={metamask} alt="MetaMask" className="w-32 h-32 mb-4" />
